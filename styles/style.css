@@ -1,0 +1,141 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #f2f4f7;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background-color: #002b5b;
+    color: #ffffff;
+    padding: 1.5rem;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.logo {
+    width: 60px;
+    animation: spin 8s linear infinite;
+}
+
+/* Logo Animation */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Navbar */
+.navbar {
+    background-color: #00509e;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.navbar li {
+    margin: 0 1rem;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+    display: block;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    background-color: #002b5b;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 43, 91, 0.75);
+    color: #ffffff;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Cards Section */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 1rem 0 0.5rem;
+    color: #002b5b;
+}
+
+.card p {
+    padding: 0 1rem 1.5rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #002b5b;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+}
